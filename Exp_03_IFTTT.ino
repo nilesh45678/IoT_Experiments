@@ -1,20 +1,25 @@
 Created by nilesh45678 https://github.com/nilesh45678
 #include <ESP8266WiFi.h>
 #include <WiFiClientSecure.h>
-#include <DHT.h>;
+#include <DHT.h>
 
 /* DHT SENSOR SETUP */
 #define DHTTYPE DHT11
 #define DHTPIN 0
-DHT dht(DHTPIN, DHTTYPE,11);
+DHT dht(DHTPIN, DHTTYPE);
+
 float humidity, temp_f; // Values read from
+
 const char* ssid = "xxxxxxxxxx";
 const char* password = "yyyyyyyy";
+
 //define the parameters for the IFTTT
 #define HOSTIFTTT "maker.ifttt.com"
 #define EVENTO "-----------"
 #define IFTTTKEY "----------------------"
+
 WiFiClientSecure client;
+
 void setup() {
 Serial.begin(115200);
 delay(10);
