@@ -14,8 +14,8 @@
 #include <DHT.h>
 
 //Your wifi credential....
-char ssid[] = "iQOO Neo7";
-char pass[] = "HARAMILAUNDA";
+char ssid[] = "xxxxxxxxxxxxxxx";
+char pass[] = "yyyyyyyyyyyyyy";
 
 // What digital pin we're connected to
 #define DHTPIN 2          // Dht11 data pin connect to D4
@@ -57,7 +57,7 @@ void setup()
   Serial.begin(115200);
   pinMode(0, OUTPUT);
   pinMode(13, OUTPUT);
-  Blynk.begin(BLYNK_AUTH_TOKEN, NULL, NULL);
+  Blynk.begin(BLYNK_AUTH_TOKEN, ssid, pass);
   dht.begin();
 
   // Setup a function to be called every second
