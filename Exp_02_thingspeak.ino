@@ -5,7 +5,7 @@
  
 String apiKey = "xxxxxxxxxxxxxxxxx";     //  Enter your Write API key from ThingSpeak
  
-const char *ssid =  "xxxxxxxxxx";     // replace with your wifi ssid and wpa2 key
+const char *ssid =  "xxxxxxxxxx";     // replace with your wifi ssid and passward key
 const char *pass =  "yyyyyyyyyy";
 const char* server = "api.thingspeak.com";
  
